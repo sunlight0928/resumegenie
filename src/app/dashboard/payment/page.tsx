@@ -47,7 +47,7 @@ const PaymentPage: React.FC<Props> = (props) => {
           <div className="input-group">
             <label
               htmlFor="months"
-              className="block text-xl font-medium text-gray-700 mt-4"
+              className="block text-xl font-medium text-gray-700 mt-5"
             >
               Number of Months (1-12):
             </label>
