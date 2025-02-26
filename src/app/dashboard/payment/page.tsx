@@ -63,7 +63,10 @@ const PaymentPage: React.FC<Props> = (props) => {
             {error && <p className="text-red-500 text-sm mt-1">{error}</p>}
           </div>
           <div className="total text-3xl font-semibold">
-            Total Amount: <strong>${totalAmount(months)}</strong>
+            Total Amount:{" "}
+            <strong>
+              <span className="text-[#0070BA]">${totalAmount(months)}</span>
+            </strong>
           </div>
           <PayPalScriptProvider
             options={{
