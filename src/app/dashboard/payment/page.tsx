@@ -38,7 +38,7 @@ const PaymentPage: React.FC<Props> = (props) => {
         description="Payment Management • ResumeGenie"
       />
       <BreadcrumbDashboard title="" />
-      <div className="bg-white rounded-xl shadow-lg p-16 max-w-lg mx-auto mt-11">
+      <div className="bg-white rounded-xl shadow-lg p-16 max-w-lg mx-auto mt-12">
         <h2 className="text-3xl font-bold text-[#0070BA] mb-10 text-center relative">
           Complete Your Payment
           <span className="absolute inset-0 border-b-4 border-[#0070BA] transform translate-y-1/2"></span>
@@ -47,7 +47,7 @@ const PaymentPage: React.FC<Props> = (props) => {
           <div className="input-group">
             <label
               htmlFor="months"
-              className="block text-xl font-medium text-gray-700 mt-2"
+              className="block text-xl font-medium text-gray-700 mt-3"
             >
               Number of Months (1-12):
             </label>
