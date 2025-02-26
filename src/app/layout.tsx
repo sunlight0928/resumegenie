@@ -17,7 +17,11 @@ export const metadata = {
   description: "ResumeGenie - Resume Matching",
 };
 
-export default async function RootLayout({ children }: { children: React.ReactNode }) {
+export default async function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en" className={`${roboto_mono.variable}`}>
       <head>
@@ -27,11 +31,13 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         ></link>
       </head>
       <body>
+        {/* <AuthProvider> */}
         <ThemeProvider defaultTheme="light">
           <ReactQueryWrapper>
             <ContextProvider>{children}</ContextProvider>
           </ReactQueryWrapper>
         </ThemeProvider>
+        {/* </AuthProvider> */}
       </body>
     </html>
   );
